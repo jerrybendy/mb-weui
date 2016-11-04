@@ -20,7 +20,7 @@ var dist = __dirname + '/dist';
 gulp.task('build:style', function (){
     var banner = [
         '/*!',
-        ' * WeUI v<%= pkg.version %> (<%= pkg.homepage %>)',
+        ' * mb-WeUI v<%= pkg.version %> (<%= pkg.homepage %>)',
         ' * Copyright <%= new Date().getFullYear() %> Tencent, Inc.',
         ' * Licensed under the <%= pkg.license %> license',
         ' */',
