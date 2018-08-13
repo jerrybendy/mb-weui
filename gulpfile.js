@@ -48,7 +48,7 @@ gulp.task('build:style', function() {
         this.emit('end');
       })
     )
-    .pipe(postcss([autoprefixer(['iOS >= 7', 'Android >= 4.1']), comments()]))
+    .pipe(postcss([autoprefixer(['> 1%', 'iOS >= 7', 'Android >= 4.4', 'ie >= 10']), comments()]))
     .pipe(header(banner, { pkg: pkg }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(dist))
